@@ -30,6 +30,7 @@ brightness = options[:brightness]
 saturation = options[:saturation]
 jenkins_url = options[:jenkins_url]
 hue_url = options[:hue_url]
+puts options[:color_passed]
 
 HueMonitor
   .new(RestClient, colors: colors, brightness: brightness, saturation: saturation)
